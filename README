@@ -1,0 +1,21 @@
+		RK2918方案的Android平板Rom工具
+	部分rom工具仅仅基于momo8官方ROM测试,其他版本请自行阅读bat源码
+
+apk\
+backup.bat	备份程序和数据 使用adb复制/data/data/和/data/app/文件夹到当前目录的bak中.
+bin\		所有相关工具程序	
+busybox		最新版本的busybox
+installapk.bat	批量使用adb install安装apk目录下所有apk文件
+mkupdate.bat	定制momo8 rom,删除部分内置apk,并重新打包rom
+packboot.bat	打包boot.img文件
+packramdisk.bat	打包ramdisk.img文件
+packsystem.bat	打包system.img文件
+restore.bat		adb push ./bak/app /system/app/
+rmsysapps.bat	删除部分内置apk
+root.bat		root连接的Android设备,system必须可写
+setenv.bat		部分环境变量设置文件
+sysrw.bat		基于Wendal的sysrw工具的修改版本
+unpackboot.bat	解压缩boot.img文件(momo8自带的boot.img文件)
+unpackboot2.bat	解压缩boot.img文件
+unpackramdisk.bat	解压缩ramdisk.img文件
+unpacksystem.bat	解压缩system.img文件
